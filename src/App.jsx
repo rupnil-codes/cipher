@@ -2,6 +2,7 @@ import './styles/App.css'
 
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/react"
+import Landing from "./routes/landing.jsx";
 
 function App() {
 
@@ -9,7 +10,7 @@ function App() {
     <>
         <div className="app">
 
-            <h1>Cipher</h1>
+            <Landing />
 
             <Analytics />
             <SpeedInsights />
