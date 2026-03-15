@@ -1,6 +1,16 @@
 
+* {
+    font-family: "CookWidetype", monospace;
+}
+
 body {
-    background-color: var(--background-color);
+    background-color: var(--clr-surface-a0);
 
     margin: 0;
+}
+
+.sigma-font {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    color: var(--clr-primary-a10);
 }
