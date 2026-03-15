@@ -1,6 +1,6 @@
 
 * {
-    font-family: "CookWidetype", monospace;
+    font-family: "Space Mono", monospace;
 }
 
 body {
@@ -9,6 +9,9 @@ body {
     margin: 0;
 }
 
+.header-font {
+    font-family: "Cook Widetype", monospace;
+}
 .sigma-font {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 800;

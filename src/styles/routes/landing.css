@@ -20,6 +20,16 @@
     font-weight: 400;
 }
 
+.landing .enter {
+    background-color: var(--clr-surface-tonal-a0);
+    padding: 2px;
+
+    border-radius: 5px;
+
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+
 .landing .cursor {
     animation: blink 1.5s infinite;
 }

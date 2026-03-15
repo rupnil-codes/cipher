@@ -3,13 +3,14 @@ import './styles/App.css'
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/react"
 import Landing from "./routes/landing.jsx";
+import Navbar from "./components/Navbar.jsx";
 
 function App() {
 
   return (
     <>
         <div className="viewport">
-
+            <Navbar />
             <Landing />
 
             <Analytics />

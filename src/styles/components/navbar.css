@@ -1,0 +1,47 @@
+
+.nav {
+    position: absolute;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 3.5rem;
+    width: 80%;
+
+    margin-top: 1.5rem;
+
+    border: 1px solid var(--clr-surface-a10);
+    border-radius: 1rem;
+
+    backdrop-filter: blur(10px) brightness(1.2);
+}
+
+.nav .logo-container {
+    margin-left: 1.5rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 0.5rem;
+}
+
+.nav .logo {
+    height: 2rem;
+    width: 2rem;
+
+    background-image: url("../../assets/logo.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.nav h1 {
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+
+    margin: 0 0 2px 0;
+}
