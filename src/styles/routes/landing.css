@@ -10,8 +10,8 @@
 }
 
 .landing h1 {
+    height: 5rem;
     font-size: 7rem;
-    margin: -1.75rem;
 }
 
 .landing h2 {
