@@ -1,5 +1,7 @@
 
 .landing {
+    /*margin-top: 3.5rem;*/
+
     width: 100%;
     height: 100%;
 
@@ -9,26 +11,142 @@
     flex-direction: column;
 }
 
+.landing .container {
+    height: 50%;
+    width: 75%;
+
+    display: flex;
+    align-items: center;
+
+    gap: 2rem;
+}
+
+.landing .side-container {
+    margin-top: 3rem;
+
+    width: 45rem;
+    height: 100%;
+}
+
+.landing .title-terminal-container {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+
+    border: 1px solid var(--clr-surface-a10);
+    border-radius: 1rem;
+
+    backdrop-filter: blur(10px) brightness(0.5);
+
+}
+
+.landing .title-terminal-container .titlebar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    width: 100%;
+    height: 3.5rem;
+
+    background-color: var(--clr-surface-a0);
+
+    border-radius: 1rem 1rem 0 0;
+    border: 1px solid var(--clr-surface-a10);
+
+    margin-top: -1px;
+    margin-left: -1px;
+}
+
+.landing .title-terminal-container .titlebar .actions {
+    height: 100%;
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    gap: 0.5rem;
+    margin-left: 1rem;
+}
+
+.landing .title-terminal-container .titlebar .actions .circle {
+    width: 0.9rem;
+    height: 0.9rem;
+    border-radius: 100%;
+}
+
+.red {
+    background-color: var(--soft-red);
+}
+.yellow {
+    background-color: var(--soft-yellow);
+}
+.green {
+    background-color: var(--soft-green);
+}
+
+.landing .title-terminal-container .titlebar .title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.landing .title-terminal-container .terminal-body {
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 1.8rem;
+    margin-top: 1.8rem;
+
+    width: 100%;
+    height: 100%;
+}
+
+.landing .title-terminal-container .terminal-body p {
+    margin: 0.2rem;
+    font-size: 0.94rem;
+}
+
 .landing h1 {
-    height: 5rem;
-    font-size: 7rem;
+    font-size: 2.5rem;
+    margin: 0 0 1rem 0;
 }
 
-.landing h2 {
-    font-family: "Space Mono", monospace;
-    font-size: 1.3rem;
-    font-weight: 400;
+.landing p {
+    font-weight: 300;
 }
 
-.landing .enter {
-    background-color: var(--clr-surface-tonal-a0);
-    padding: 2px;
-
-    border-radius: 5px;
-
-    margin-right: 0.5rem;
-    margin-left: 0.5rem;
+.landing .container .side-container p {
+    font-size: 1.05rem;
+    margin: 0.2rem;
 }
+
+/*.landing h1 {*/
+/*    height: 5rem;*/
+/*    font-size: 7rem;*/
+/*}*/
+
+/*.landing h2 {*/
+/*    font-family: "Space Mono", monospace;*/
+/*    font-size: 1.3rem;*/
+/*    font-weight: 400;*/
+/*}*/
+
+/*.landing .enter {*/
+/*    background-color: var(--clr-surface-tonal-a0);*/
+/*    padding: 2px;*/
+
+/*    border-radius: 5px;*/
+
+/*    margin-right: 0.5rem;*/
+/*    margin-left: 0.5rem;*/
+/*}*/
 
 .landing .cursor {
     animation: blink 1.5s infinite;
