@@ -41,6 +41,31 @@ function Landing() {
                     </div>
                 </section>
             </section>
+            <section className="content">
+                <div className={"divider"}/>
+                <div className={"glow"}/>
+
+                <h1> Deciphering</h1>
+                <h2>CIPHER's Mystery</h2>
+                <div className={"small-divider"}/>
+                <p>Explanation here.. COMING SOONNN</p>
+
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+
+            </section>
         </>
     )
 }

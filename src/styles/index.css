@@ -8,6 +8,8 @@ body {
     background-color: var(--clr-dark-a0);
     color: var(--clr-primary-a80);
     margin: 0;
+
+    height: 100%;
 }
 
 .header-font {
