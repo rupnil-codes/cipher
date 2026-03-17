@@ -105,7 +105,6 @@
 }
 
 .landing .hero .terminal .titlebar .actions {
-    height: 100%;
     position: absolute;
 
     display: flex;

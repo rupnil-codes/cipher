@@ -40,7 +40,6 @@ function Landing() {
                         </div>
                     </div>
                 </section>
-
             </section>
         </>
     )
