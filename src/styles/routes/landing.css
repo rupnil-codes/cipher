@@ -11,57 +11,96 @@
     flex-direction: column;
 }
 
-.landing .container {
-    height: 50%;
-    width: 75%;
+.landing .hero {
+    margin-top: 6rem;
+
+    width: 100%;
+    height: calc(100% - 5.2rem);
 
     display: flex;
     align-items: center;
-
-    gap: 2rem;
+    flex-direction: column;
 }
 
-.landing .side-container {
+.landing .hero h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    margin: 0;
+}
+
+.landing .hero p {
+    margin: 0.2rem;
+    color: var(--clr-surface-tonal-a50);
+
+    text-align: center;
+}
+
+.landing .hero .buttons {
+    margin-top: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    gap: 1rem;
+}
+
+.landing .hero .buttons .button-container {
+    padding: 0.75rem 1.5rem;
+
+    /*background-color: var();*/
+    backdrop-filter: brightness(1.5);
+    color: var(--clr-primary-a70);
+    border-radius: 0.5rem;
+
+    font-weight: 200;
+}
+.button-container-important {
+    padding: 0.75rem 1.5rem;
+
+    background-color: var(--clr-primary-a0);
+    color: var(--clr-primary-a80);
+
+    border-radius: 0.5rem;
+    font-weight: 400;
+}
+
+.landing .hero .terminal {
     margin-top: 3rem;
 
-    width: 45rem;
-    height: 100%;
-}
-
-.landing .title-terminal-container {
-    width: 100%;
-    height: 100%;
-
-    display: flex;
-    flex-direction: column;
-    /*justify-content: center;*/
-    /*align-items: center;*/
-
-    border: 1px solid var(--clr-surface-a10);
-    border-radius: 1rem;
-
-    backdrop-filter: blur(10px) brightness(0.5);
-
-}
-
-.landing .title-terminal-container .titlebar {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    flex-direction: column;
 
-    width: 100%;
-    height: 3.5rem;
+    backdrop-filter: brightness(0.6);
 
-    background-color: var(--clr-surface-a0);
+    height: 100%;
+    width: 70%;
 
-    border-radius: 1rem 1rem 0 0;
-    border: 1px solid var(--clr-surface-a10);
+    border-radius: 1.25rem 1.25rem 0 0;
+    border-top: 2px solid var(--clr-surface-a10);
+    border-right: 2px solid var(--clr-surface-a10);
+    border-left: 2px solid var(--clr-surface-a10);
+    border-bottom: 0;
 
-    margin-top: -1px;
-    margin-left: -1px;
+    box-shadow: 0 0 10rem -5rem var(--clr-primary-a30);
 }
 
-.landing .title-terminal-container .titlebar .actions {
+.landing .hero .terminal .titlebar {
+    height: 3.5rem;
+    width: 100%;
+
+    background-color: var(--clr-surface-a0);
+    border-bottom: 2px solid var(--clr-surface-a10);
+
+    border-radius: 1.25rem 1.25rem 0 0;
+
+    display: flex;
+    align-items: center;
+}
+
+.landing .hero .terminal .titlebar .actions {
     height: 100%;
     position: absolute;
 
@@ -70,13 +109,13 @@
     justify-content: center;
     flex-direction: row;
 
-    gap: 0.5rem;
-    margin-left: 1rem;
+    gap: 0.75rem;
+    margin-left: 1.25rem;
 }
 
-.landing .title-terminal-container .titlebar .actions .circle {
-    width: 0.9rem;
-    height: 0.9rem;
+.landing .hero .terminal .titlebar .actions .circle {
+    width: 0.85rem;
+    height: 0.85rem;
     border-radius: 100%;
 }
 
@@ -90,69 +129,24 @@
     background-color: var(--soft-green);
 }
 
-.landing .title-terminal-container .titlebar .title-container {
+.landing .hero .terminal .titlebar .title-container {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
+
+    color: var(--clr-surface-a80);
 }
 
-.landing .title-terminal-container .terminal-body {
+.landing .hero .terminal .body {
     display: flex;
-    flex-direction: column;
-
-    margin-left: 1.8rem;
-    margin-top: 1.8rem;
 
     width: 100%;
     height: 100%;
+
+    margin-top: 1rem;
 }
 
-.landing .title-terminal-container .terminal-body p {
-    margin: 0.2rem;
-    font-size: 0.94rem;
-}
-
-.landing h1 {
-    font-size: 2.5rem;
-    margin: 0 0 1rem 0;
-}
-
-.landing p {
-    font-weight: 300;
-}
-
-.landing .container .side-container p {
-    font-size: 1.05rem;
-    margin: 0.2rem;
-}
-
-/*.landing h1 {*/
-/*    height: 5rem;*/
-/*    font-size: 7rem;*/
-/*}*/
-
-/*.landing h2 {*/
-/*    font-family: "Space Mono", monospace;*/
-/*    font-size: 1.3rem;*/
-/*    font-weight: 400;*/
-/*}*/
-
-/*.landing .enter {*/
-/*    background-color: var(--clr-surface-tonal-a0);*/
-/*    padding: 2px;*/
-
-/*    border-radius: 5px;*/
-
-/*    margin-right: 0.5rem;*/
-/*    margin-left: 0.5rem;*/
-/*}*/
-
-.landing .cursor {
-    animation: blink 1.5s infinite;
-}
-
-@keyframes blink {
-    0%,50%,100% { opacity: 1; }
-    25%,75% { opacity: 0; }
+.landing .hero .terminal .body p {
+    margin-left: 1.5rem;
 }

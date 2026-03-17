@@ -10,7 +10,7 @@ function Navbar() {
                     <h1 className={"header-font"}>
                         C1PH
                         <span className={"sigma-font"}>Σ</span>
-                        R_
+                        R
                     </h1>
                 </div>
             </div>
