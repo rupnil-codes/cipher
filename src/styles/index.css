@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: var(--clr-surface-a0);
+    background-color: var(--clr-dark-a0);
     color: var(--clr-primary-a80);
     margin: 0;
 }

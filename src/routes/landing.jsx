@@ -7,7 +7,11 @@ function Landing() {
         <>
             <section className={"landing"}>
                 <section className={"hero"}>
-                    <h1 className={"header"}>CIPHER</h1>
+                    <h1 className={"header-font"}>
+                        C1PH
+                        <span className={"sigma-font"}>Σ</span>
+                        R
+                    </h1>
                     <p>Build a CYBERSECURITY related project.</p>
                     <p>Get <i>laptops</i>, <i>hacker kits</i>, and more!</p>
 
@@ -36,6 +40,7 @@ function Landing() {
                         </div>
                     </div>
                 </section>
+
             </section>
         </>
     )

@@ -1,6 +1,6 @@
 
 .nav {
-    position: absolute;
+    position: fixed;
 
     display: flex;
     flex-direction: row;
@@ -15,7 +15,7 @@
     border: 1px solid var(--clr-surface-a10);
     border-radius: 1rem;
 
-    backdrop-filter: blur(10px) brightness(1.2);
+    backdrop-filter: blur(0.75rem) brightness(0.5);
 }
 
 .nav .logo-container {
