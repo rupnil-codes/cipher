@@ -3,7 +3,7 @@
 @font-face {
     font-family: 'CookWidetype';
     src: local('CookWidetype'),
-    url('./fonts/CookWidetype.ttf') format('truetype');
+    url('https://cipher.dino.icu/fonts/CookWidetype.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
