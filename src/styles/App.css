@@ -9,10 +9,12 @@
 }
 
 #trailer {
-    height: 1.5rem;
-    width: 1.5rem;
-    background-color: white;
-    border-radius: 1.5rem;
+    aspect-ratio: 1;
+
+    height: 2rem;
+    /*background-color: white;*/
+    backdrop-filter: invert(1);
+    border-radius: 50%;
 
     position: fixed;
 
