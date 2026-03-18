@@ -42,7 +42,7 @@
 }
 
 .landing .hero .buttons {
-    margin-top: 1rem;
+    margin-top: 1.75rem;
 
     display: flex;
     align-items: center;
@@ -172,9 +172,14 @@
     align-items: center;
 
     background-color: var(--clr-dark-a0);
+
+    margin-bottom: 12rem;
 }
 
-.content .divider {
+.divider {
+    position: absolute;
+    z-index: 0;
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -194,7 +199,7 @@
     border-bottom: 2px solid var(--clr-surface-a0);
 }
 
-.content .divider .track {
+.divider .track {
     display: inline-block;
     animation: scroll 15s linear infinite;
 }
@@ -242,6 +247,122 @@
     width: 65%;
 
     background-color: var(--clr-surface-a0);
-    margin: 0 0 5rem 0;
+    margin: 0 0 2rem 0;
 }
 
+.content p {
+    margin: 0.2rem;
+    color: var(--clr-surface-tonal-a50);
+
+    text-align: center;
+}
+
+.content .cards {
+    margin-top: 4rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    width: 65%;
+    height: 30rem;
+
+    /*background-color: var(--clr-surface-tonal-a50);*/
+}
+
+.content .cards .card {
+    height: 90%;
+    width: calc(46% - 3rem);
+
+    padding: 1.5rem;
+
+    display: flex;
+    align-items: center;
+
+    flex-direction: column;
+
+    border: 2px solid var(--clr-surface-a10);
+    background-color: color-mix(in srgb, var(--clr-surface-a0) 40%, black);
+    border-radius: 1rem;
+
+    box-shadow: 0 0 6rem -3rem var(--clr-primary-a30);
+}
+.content .cards .card.ys {
+    rotate: -5deg;
+    /*margin-right: 1rem;*/
+}
+.content .cards .card.ws {
+    rotate: 5deg;
+    margin-top: 5rem;
+    /*margin-left: 1rem;*/
+}
+
+.content .cards .card .header {
+    width: 100%;
+    height: 5rem;
+    margin: 0 0 1.5rem 0;
+
+    background-color: color-mix(in srgb, var(--clr-surface-a10) 50%, black);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 0.75rem;
+}
+
+.content .cards .card .header h1 {
+    font-size: 1.75rem;
+    color: var(--clr-primary-a80);
+}
+
+.content .cards .card .ideas {
+    margin-top: 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.65rem;
+
+    width: 100%;
+    flex-grow: 1;
+
+    color: var(--clr-surface-a80);
+}
+
+.content .cards .card .ideas .ideas-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    width: calc(100% - 2rem);
+
+    padding: 0.75rem 1rem;
+    outline: 2px solid color-mix(in srgb, var(--clr-surface-a10) 50%, black);
+
+    border-radius: 0.5rem;
+}
+
+.arrow {
+    margin-left: 2rem;
+
+    background-color: var(--clr-primary-a80);
+
+    -webkit-mask: url("../../assets/arrow.svg") no-repeat center;
+    mask: url("../../assets/arrow.svg") no-repeat center;
+
+    -webkit-mask-size: contain;
+    mask-size: contain;
+
+
+    position: absolute;
+    z-index: 99;
+
+    height: 4rem;
+    width: 9rem;
+
+    transform: scaleY(-1);
+    rotate: 10deg;
+}

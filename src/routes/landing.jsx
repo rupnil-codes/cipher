@@ -56,25 +56,71 @@ function Landing() {
                 <div className={"glow"}/>
 
                 <h1> Deciphering</h1>
-                <h2>CIPHER's Mystery</h2>
+                <h2>CIPHER's mystery</h2>
                 <div className={"small-divider"}/>
-                <p>Explanation here.. COMING SOONNN</p>
+                <p>If you are still confused about <i>CIPHER</i></p>
+                <p>and whats it about: </p>
 
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
+                <div className={"cards"}>
+                    <div className={"card ys"}>
+                        <div className={"header"}>
+                            <h1>You ship</h1>
+                        </div>
+                        <p>You make any Cybersecurity related project, like website, app, games, etc! Some ideas
+                            include: </p>
+                        <div className={"ideas"}>
+                            <div className={"ideas-container"}>
+                                Encryption Algorithms
+                            </div>
+                            <div className={"ideas-container"}>
+                                A Hacker Sim Game
+                            </div>
+                            <div className={"ideas-container"}>
+                                A password manager
+                            </div>
+                            <div className={"ideas-container"}>
+                                Capture the Flags
+                            </div>
+                        </div>
+                    </div>
 
+                    <div className="arrow"/>
+
+                    <div className={"card ws"}>
+                        <div className={"header"}>
+                            <h1>We ship</h1>
+                        </div>
+                        <p>Submit projects earn <i>BYTES</i> & buy stuff from our shop! Items include: </p>
+                        <div className={"ideas"}>
+                            <div className={"ideas-container"}>
+                                Hackduckies
+                            </div>
+                            <div className={"ideas-container"}>
+                                Yubikeys
+                            </div>
+                            <div className={"ideas-container"}>
+                                Proxmark 3 RDVs
+                            </div>
+                            <div className={"ideas-container"}>
+                                Laptops & More
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <section
+                style={{
+                    height: "100vh",
+                    width: "100%",
+                }}
+            >
+                <div className={"divider"}>
+                    <div className="track">
+                        <span>{generateBinary()}</span>
+                        <span>{generateBinary()}</span>
+                    </div>
+                </div>
             </section>
         </>
     )
