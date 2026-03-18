@@ -58,8 +58,8 @@ function Landing() {
                 <h1>What is this?</h1>
                 {/*<h2>What is this?</h2>*/}
                 <div className={"small-divider"}/>
-                <p>If you are still confused about <i>CIPHER</i></p>
-                <p>and what this is about: </p>
+                <p>If you are still confused about <i>CIPHER</i><br/>
+                    and what this is about: </p>
 
                 <div className={"cards"}>
                     <div className={"card ys"}>
@@ -159,10 +159,7 @@ function Landing() {
                     </div>
                 </div>
             </section>
-            <section style={{
-                height: "100vh",
-                width: "100%",
-            }}>
+            <section className={"faqs"}>
                 <div className={"divider"}>
                     <div className="track">
                         <span>{generateBinary()}</span>
@@ -170,6 +167,36 @@ function Landing() {
                     </div>
                 </div>
                 <div className={"glow"}/>
+
+                <h1>FAQs</h1>
+                <div className={"small-divider"}/>
+                <p>Some of  your pressing questions about <i>CIPHER</i><br/>
+                    has been answered below: </p>
+
+                <div className={"container"}>
+                    <div className={"faq"}>
+                        <div className={"question"}>Q. When will this start?</div>
+                        <div className={"answer"}><i>CIPHER</i> is a YSWS concept. If this gets selected for 2026 Summer Internship or if I get sponsors this will become a reality! Keep an eye on #cipher!</div>
+                    </div>
+                    <div className={"faq"}>
+                        <div className={"question"}>Q. Can I submit multiple projects?</div>
+                        <div className={"answer"}>YES! in fact you are encouraged to make multiple projects.</div>
+                    </div>
+                    <div className={"faq"}>
+                        <div className={"question"}>Q. What is <i>"BYTES"</i>?</div>
+                        <div className={"answer"}>
+                            <i>BYTES</i> are the fake currency of Cipher. After submitting a project, it will go through voting. The result of the voting determines how many <i>BYTES</i> you'll receive for each hour coded.<br/><br/>
+                            Use the <i>BYTES</i> to buy something nice!</div>
+                    </div>
+                    <div className={"faq"}>
+                        <div className={"question"}>Q. How do I track time?</div>
+                        <div className={"answer"}>
+                            Use Hackatime, an editor extension that tracks the time you spend coding. You can install it
+                            <a href={"https://hackatime.hackclub.com/"}  target="_blank" rel="noopener noreferrer"> here</a>
+                            !
+                        </div>
+                    </div>
+                </div>
             </section>
         </>
     )
