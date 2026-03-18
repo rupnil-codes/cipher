@@ -46,7 +46,7 @@ function Landing() {
                     </div>
                 </section>
             </section>
-            <section className="content">
+            <section className="ysws">
                 <div className={"divider"}>
                     <div className="track">
                         <span>{generateBinary()}</span>
@@ -109,18 +109,67 @@ function Landing() {
                 </div>
 
             </section>
-            <section
-                style={{
-                    height: "100vh",
-                    width: "100%",
-                }}
-            >
+            <section className={"community"}>
                 <div className={"divider"}>
                     <div className="track">
                         <span>{generateBinary()}</span>
                         <span>{generateBinary()}</span>
                     </div>
                 </div>
+                <div className={"glow"}/>
+
+                <h1>Community</h1>
+                <div className={"small-divider"}/>
+
+                <div className={"container"}>
+                    <div className={"description"}>
+                        <h2>Join the community</h2>
+                        <p>Connect with thousands of teen hackers on Slack, share your projects, and get help when you're stuck.</p>
+                        <div className={"buttons"}>
+                            {/*<div className={"button-container"}>*/}
+                            {/*    Learn More*/}
+                            {/*</div>*/}
+                            <a href={"http://hackclub.com/slack"} target="_blank" rel="noopener noreferrer">
+                                <div className={"button-container-important"}>
+                                    Join Slack
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div className={"terminal"}>
+                        <div className={"titlebar"}>
+                            <div className={"actions"}>
+                                <div className={"circle red"}></div>
+                                <div className={"circle yellow"}></div>
+                                <div className={"circle green"}></div>
+                            </div>
+                            <div className={"title-container"}>
+                                <div className={"title"}>anon@hackclub - cipher</div>
+                            </div>
+                        </div>
+                        <div className={"body"}>
+                            <p>anon@hackclub ~ % <span className={"bright"}>./connect --community</span></p>
+                            <p>
+                                INIT handshake...<br/>
+                                RESOLVING: <span className="accent">hackclub.com/slack</span><br/>
+                                STATUS: <span className="success">FRIENDLY</span><br/>
+                                NODES: <span className="info">49,567</span><br/>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section style={{
+                height: "100vh",
+                width: "100%",
+            }}>
+                <div className={"divider"}>
+                    <div className="track">
+                        <span>{generateBinary()}</span>
+                        <span>{generateBinary()}</span>
+                    </div>
+                </div>
+                <div className={"glow"}/>
             </section>
         </>
     )
