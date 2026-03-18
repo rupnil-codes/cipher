@@ -55,11 +55,11 @@ function Landing() {
                 </div>
                 <div className={"glow"}/>
 
-                <h1> Deciphering</h1>
-                <h2>CIPHER's mystery</h2>
+                <h1>What is this?</h1>
+                {/*<h2>What is this?</h2>*/}
                 <div className={"small-divider"}/>
                 <p>If you are still confused about <i>CIPHER</i></p>
-                <p>and whats it about: </p>
+                <p>and what this is about: </p>
 
                 <div className={"cards"}>
                     <div className={"card ys"}>
