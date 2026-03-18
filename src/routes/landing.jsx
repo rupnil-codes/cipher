@@ -3,6 +3,11 @@ import "../styles/routes/landing.css";
 
 
 function Landing() {
+
+    const generateBinary = (length = 256) => {
+        return Array.from({ length }, (_, i) => i % 2 ? 1 : 0).join("");
+    }
+
     return (
         <>
             <section className={"landing"}>
@@ -42,7 +47,12 @@ function Landing() {
                 </section>
             </section>
             <section className="content">
-                <div className={"divider"}/>
+                <div className={"divider"}>
+                    <div className="track">
+                        <span>{generateBinary()}</span>
+                        <span>{generateBinary()}</span>
+                    </div>
+                </div>
                 <div className={"glow"}/>
 
                 <h1> Deciphering</h1>
