@@ -32,7 +32,9 @@ function App() {
             className="viewport"
             onMouseMove={trailerFunc}
         >
+            <div className={"dotted-bg"}></div>
             {/*<div id={"trailer"}></div>*/}
+
             <Navbar />
             <Landing />
 

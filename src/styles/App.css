@@ -1,6 +1,36 @@
 
-.viewport {
+.dotted-bg {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
     height: 100%;
+
+    /*background-color: red;*/
+
+    background-image: radial-gradient(
+            circle,
+            color-mix(in srgb, var(--clr-surface-a10) 60%, black) 1px,
+            transparent 1px
+    );
+
+    background-size: 20px 20px;
+}
+.dotted-bg::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+
+    background: radial-gradient(
+            circle at center,
+            transparent 60%,
+            var(--clr-dark-a0)
+    );
+}
+
+.viewport {
+    position: relative;
+    min-height: 100%;
     width: 100%;
 
     display: flex;

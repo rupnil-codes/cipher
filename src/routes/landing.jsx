@@ -199,6 +199,17 @@ function Landing() {
                     </div>
                 </div>
             </section>
+            <section className={"footer"}>
+                <div className={"divider"}>
+                    <div className="track">
+                        <span>{generateBinary()}</span>
+                        <span>{generateBinary()}</span>
+                    </div>
+                </div>
+                <div className={"gap"}></div>
+
+                {/*<p>Made with 💖</p>*/}
+            </section>
         </>
     )
 }

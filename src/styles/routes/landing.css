@@ -629,3 +629,20 @@ a {
 
     background-color: var(--clr-dark-a0);
 }
+
+
+
+.footer {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /*margin-bottom: 12rem;*/
+    background-color: var(--clr-dark-a0);
+}
+
+.footer .gap {
+    height: 2rem;
+}
