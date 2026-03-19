@@ -17,8 +17,8 @@ function Landing() {
                         <span className={"sigma-font"}>Σ</span>
                         R
                     </h1>
-                    <p>Build a CYBERSECURITY related project.</p>
-                    <p>Get <i>laptops</i>, <i>hacker kits</i>, and more!</p>
+                    <p>Build a <span className={"success"}>CYBERSECURITY</span> related project.</p>
+                    <p>Get <i><a href={"#"}>laptops</a></i>, <i><a href={"#"}>hacker kits</a></i>, and more!</p>
 
                     <div className={"buttons"}>
                         <div className={"button-container"}>

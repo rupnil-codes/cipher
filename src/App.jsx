@@ -32,7 +32,7 @@ function App() {
             className="viewport"
             onMouseMove={trailerFunc}
         >
-            <div id={"trailer"}></div>
+            {/*<div id={"trailer"}></div>*/}
             <Navbar />
             <Landing />
 
