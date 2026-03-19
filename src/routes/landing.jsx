@@ -1,9 +1,11 @@
 import "../styles/routes/landing.css";
-import {ArrowDown, ArrowUpRight} from "lucide-react";
+import {ArrowDown, ArrowUpRight, ArrowRight} from "lucide-react";
 import {useState} from "react";
 
 
 function Landing() {
+
+    const [openIndex, setOpenIndex] = useState(null);
 
     const generateBinary = (length = 256) => {
         return Array.from({length}, (_, i) => i % 2 ? 1 : 0).join("");
@@ -61,7 +63,7 @@ function Landing() {
                                 Learn More <ArrowDown size={16} strokeWidth={2}/>
                             </div>
                         </a>
-                        <a href={"#footer"}>
+                        <a href={"https://rsvp.hackclub.community/cipher"} target="_blank" rel="noopener noreferrer">
                             <div className={"button-container-important"}>
                                 RSVP <ArrowUpRight size={16} strokeWidth={3}/>
                             </div>
@@ -176,7 +178,7 @@ function Landing() {
                             {/*</div>*/}
                             <a href={"http://hackclub.com/slack"} target="_blank" rel="noopener noreferrer">
                                 <div className={"button-container-important"}>
-                                    Join Slack
+                                    Join Slack <ArrowRight size={16} strokeWidth={3}/>
                                 </div>
                             </a>
                         </div>
@@ -222,35 +224,44 @@ function Landing() {
                 <p>Some of your pressing questions about <i>CIPHER</i><br/>
                     has been answered below: </p>
 
-                <div className={"container"}>
-                    <div className={"faq"}>
-                        <div className={"question"}>Q. When will this start?</div>
-                        <div className={"answer"}><i>CIPHER</i> is a YSWS concept. If this gets selected for 2026 Summer
-                            Internship or if I get sponsors this will become a reality! Keep an eye on #cipher!
+                <div className="container">
+                    {[
+                        {
+                            q: "When will this start?",
+                            a: <> <i>CIPHER</i> is a YSWS concept. If this gets selected for 2026 Summer Internship or if I get sponsors this will become a reality! Keep an eye on #cipher! </>
+                        },
+                        {
+                            q: "Can I submit multiple projects?",
+                            a: <>YES! in fact you are encouraged to make multiple projects.</>
+                        },
+                        {
+                            q: 'What is "BYTES"?',
+                            a: <> <i>BYTES</i> are the fake currency of Cipher. After submitting a project, it will go through
+                                voting. The result of the voting determines how many <i>BYTES</i> you'll receive for each
+                                hour coded.<br/><br/>
+                                Use the <i>BYTES</i> to buy something nice! </>
+                        },
+                        {
+                            q: "How do I track time?",
+                            a: <>Use Hackatime, an editor extension that tracks the time you spend coding. You can install it
+                                <a href={"https://hackatime.hackclub.com/"} target="_blank"
+                                   rel="noopener noreferrer"> here</a>
+                                !</>
+                        }
+                    ].map((item, i) => (
+                        <div className="faq" key={i}>
+                            <div
+                                className="question"
+                                onClick={() => setOpenIndex(openIndex === i ? null : i)}
+                            >
+                                Q. {item.q}
+                            </div>
+
+                            <div className={`answer ${openIndex === i ? "open" : ""}`}>
+                                {item.a}
+                            </div>
                         </div>
-                    </div>
-                    <div className={"faq"}>
-                        <div className={"question"}>Q. Can I submit multiple projects?</div>
-                        <div className={"answer"}>YES! in fact you are encouraged to make multiple projects.</div>
-                    </div>
-                    <div className={"faq"}>
-                        <div className={"question"}>Q. What is <i>"BYTES"</i>?</div>
-                        <div className={"answer"}>
-                            <i>BYTES</i> are the fake currency of Cipher. After submitting a project, it will go through
-                            voting. The result of the voting determines how many <i>BYTES</i> you'll receive for each
-                            hour coded.<br/><br/>
-                            Use the <i>BYTES</i> to buy something nice!
-                        </div>
-                    </div>
-                    <div className={"faq"}>
-                        <div className={"question"}>Q. How do I track time?</div>
-                        <div className={"answer"}>
-                            Use Hackatime, an editor extension that tracks the time you spend coding. You can install it
-                            <a href={"https://hackatime.hackclub.com/"} target="_blank"
-                               rel="noopener noreferrer"> here</a>
-                            !
-                        </div>
-                    </div>
+                    ))}
                 </div>
             </section>
             <section id={"footer"} className={"footer"}>
@@ -267,12 +278,16 @@ function Landing() {
                         <p>CIPHER is nowhere near completion. So, if you want CIPHER to become a reality, RSVP now! and
                             keep an eye on #cipher!</p>
                         <div className={"buttons"}>
-                            <div className={"button-container"}>
-                                Join Slack
-                            </div>
-                            <div className={"button-container"}>
-                                RSVP
-                            </div>
+                            <a href={"https://hackclub.com/slack"} target={"_blank"} rel="noopener noreferrer" >
+                                <div className={"button-container"}>
+                                    Join Slack <ArrowUpRight size={16} strokeWidth={3}/>
+                                </div>
+                            </a>
+                            <a href={"https://rsvp.hackclub.community/cipher"} target={"_blank"} rel="noopener noreferrer" >
+                                <div className={"button-container"}>
+                                    RSVP <ArrowUpRight size={16} strokeWidth={3}/>
+                                </div>
+                            </a>
                         </div>
                     </div>
                     <div className={"footer"}>

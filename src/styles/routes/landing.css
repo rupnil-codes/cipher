@@ -128,7 +128,7 @@
 
     /*border: 2px solid color-mix(in srgb, var(--clr-primary-a30) 20%, transparent);*/
 
-    /*box-shadow: 0 0 1rem 0 var(--clr-surface-a10);*/
+    box-shadow: 0 0 2rem 0 var(--clr-surface-a0);
 }
 
 .landing .hero .terminal .titlebar {
@@ -556,10 +556,21 @@
 
     border-radius: 0.5rem;
     font-weight: 400;
+
+    transition: 0.2s ease-in-out all;
+}
+.community .container .buttons .button-container-important:hover {
+    translate: 0.5rem 0;
+    /*background-color: var(--clr-primary-a10);*/
 }
 
 a {
     text-decoration: none;
+}
+
+.footer a {
+    /*text-decoration: none;*/
+    color: var(--clr-primary-a80);
 }
 
 
@@ -646,10 +657,18 @@ a {
     outline: 2px dashed color-mix(in srgb, var(--clr-surface-a10) 80%, black);
 
     border-radius: 0.75rem;
-
     background-color: var(--clr-dark-a0);
-}
 
+    /*max-height: 0;*/
+    /*overflow: hidden;*/
+    /*opacity: 0;*/
+    /*transition: all 0.3s ease-in-out;*/
+}
+/*.faqs .container .faq .answer.open {*/
+/*    max-height: 300px;*/
+/*    opacity: 1;*/
+/*    margin-top: 8px;*/
+/*}*/
 
 
 .footer {
@@ -683,7 +702,7 @@ a {
 
 .footer .rsvp {
     margin: 6rem 6rem 1rem 6rem;
-    padding: 4rem 2rem;
+    padding: 3rem 2rem;
 
     width: 100%;
     max-width: 40rem;
@@ -695,7 +714,7 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
+    gap: 1rem;
 
     border-radius: 1rem;
     border: 2px dashed var(--clr-surface-a20);
@@ -713,9 +732,13 @@ a {
 
     color: var(--clr-surface-tonal-a50);
     text-align: center;
+
+    line-height: 1.65rem;
 }
 
 .footer .rsvp .buttons {
+    margin-top: 0.4rem;
+
     display: flex;
     flex-direction: row;
     gap: 1rem;
@@ -725,13 +748,19 @@ a {
 
 .footer .rsvp .buttons .button-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    gap: 1rem;
 
     padding: 0.75rem 1.5rem;
 
     background-color: var(--clr-primary-a0);
     border-radius: 0.5rem;
+
+    transition: all 0.2s ease-in-out;
+}
+.footer .rsvp .buttons .button-container:hover {
+    translate: 0 -0.4rem;
 }
 
 .footer .container .footer {
