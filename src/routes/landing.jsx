@@ -1,4 +1,5 @@
 import "../styles/routes/landing.css";
+import {ArrowDown, ArrowUpRight} from "lucide-react";
 // import {useState} from "react";
 
 
@@ -22,10 +23,10 @@ function Landing() {
 
                     <div className={"buttons"}>
                         <div className={"button-container"}>
-                            Learn More
+                            Learn More <ArrowDown size={16} strokeWidth={2} />
                         </div>
                         <div className={"button-container-important"}>
-                            RSVP
+                            RSVP <ArrowUpRight size={16} strokeWidth={3}/>
                         </div>
                     </div>
 
