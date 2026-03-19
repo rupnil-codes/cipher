@@ -20,3 +20,13 @@ body {
     font-weight: 800;
     color: var(--clr-primary-a10);
 }
+
+::selection {
+    background-color: var(--clr-primary-a30);
+    color: var(--clr-dark-a0);
+}
+
+::-moz-selection {
+    background-color: var(--clr-primary-a30);
+    color: var(--clr-dark-a0);
+}
