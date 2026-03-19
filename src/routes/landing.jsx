@@ -206,9 +206,25 @@ function Landing() {
                         <span>{generateBinary()}</span>
                     </div>
                 </div>
-                <div className={"gap"}></div>
 
-                {/*<p>Made with 💖</p>*/}
+                <div className={"container"}>
+                    <div className={"rsvp"}>
+                        <h1>Want it to happen?</h1>
+                        <p>CIPHER is nowhere near completion. So, if you want CIPHER to become a reality, RSVP now! and keep an eye on #cipher!</p>
+                        <div className={"buttons"}>
+                            <div className={"button-container"}>
+                                Join Slack
+                            </div>
+                            <div className={"button-container"}>
+                                RSVP
+                            </div>
+                        </div>
+                    </div>
+                    <div className={"footer"}>
+                        Made with 💖 by rupnil.codes
+                        <p>* Cipher is not (yet!) officially endorsed by Hack Club. This website is just a concept.</p>
+                    </div>
+                </div>
             </section>
         </>
     )

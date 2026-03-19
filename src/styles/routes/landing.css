@@ -589,7 +589,8 @@ a {
 }
 
 .faqs .container .faq {
-    width: 40rem;
+    width: 100%;
+    max-width: 40rem;
 
     display: flex;
     flex-direction: column;
@@ -640,9 +641,95 @@ a {
     align-items: center;
 
     /*margin-bottom: 12rem;*/
-    background-color: var(--clr-dark-a0);
+    /*background-color: var(--clr-dark-a0);*/
 }
 
-.footer .gap {
-    height: 2rem;
+
+.footer .container {
+    margin-top: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 46rem;
+    max-width: 65%;
+
+    /*outline: 2px solid color-mix(in srgb, var(--clr-surface-a10) 80%, black);*/
+
+    border-radius: 0.5rem;
+
+}
+
+.footer .rsvp {
+    margin: 6rem 6rem 1rem 6rem;
+    padding: 4rem 2rem;
+
+    width: 100%;
+    max-width: 40rem;
+
+    /*height: 10rem;*/
+    background-color: color-mix(in srgb, var(--clr-surface-a0) 50%, black);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+    border-radius: 1rem;
+    border: 2px dashed var(--clr-surface-a20);
+}
+
+.footer .rsvp h1 {
+    font-family: "Cook Widetype", cursive;
+    letter-spacing: 2px;
+
+    margin: 0;
+}
+
+.footer p {
+    width: 80%;
+
+    color: var(--clr-surface-tonal-a50);
+    text-align: center;
+}
+
+.footer .rsvp .buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .rsvp .buttons .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 0.75rem 1.5rem;
+
+    background-color: var(--clr-primary-a0);
+    border-radius: 0.5rem;
+}
+
+.footer .container .footer {
+    margin: 0 6rem 6rem 6rem;
+    padding: 2rem 2rem;
+
+    width: 100%;
+    max-width: 40rem;
+
+    /*height: 10rem;*/
+    background-color: color-mix(in srgb, var(--clr-surface-a0) 50%, black);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 1rem;
+    border: 2px dashed var(--clr-surface-a20);
 }
