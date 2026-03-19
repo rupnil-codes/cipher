@@ -1,4 +1,8 @@
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     font-family: "JetBrains Mono", monospace;
     /*outline: 1px solid red !important;*/

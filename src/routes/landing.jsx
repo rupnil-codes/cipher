@@ -1,33 +1,71 @@
 import "../styles/routes/landing.css";
 import {ArrowDown, ArrowUpRight} from "lucide-react";
-// import {useState} from "react";
+import {useState} from "react";
 
 
 function Landing() {
 
     const generateBinary = (length = 256) => {
-        return Array.from({ length }, (_, i) => i % 2 ? 1 : 0).join("");
+        return Array.from({length}, (_, i) => i % 2 ? 1 : 0).join("");
     }
+
+    const number = "105,406";
+
+    const DEFAULT_TITLE = "C1PHΣR"
+    const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    const [title, setTitle] = useState("C1PHΣR");
+
+    const glitchEffect  = () => {
+        let iterations = 0;
+
+        const interval = setInterval(() => {
+            setTitle(
+                title.split("")
+                    .map((letter, index) => {
+                        if (index < iterations) {
+                            return DEFAULT_TITLE[index];
+                        }
+
+                        return letters[Math.floor(Math.random() * 26)]
+                    })
+                    .join("")
+            );
+
+            if (iterations >= DEFAULT_TITLE.length) clearInterval(interval);
+
+            iterations += 1/3;
+        }, 30);
+
+    };
 
     return (
         <>
-            <section className={"landing"}>
+            <section id={"landing"} className={"landing"}>
                 <section className={"hero"}>
-                    <h1 className={"header-font"}>
-                        C1PH
-                        <span className={"sigma-font"}>Σ</span>
-                        R
+                    <h1
+                        className={"header-font"}
+                        onMouseEnter={glitchEffect}
+                    >
+                        {title.split("").map((char, i) =>
+                                char === "Σ"
+                                    ? <span key={i} className="sigma-font">Σ</span>
+                                    : char
+                        )}
                     </h1>
                     <p>Build a <span className={"success"}>CYBERSECURITY</span> related project.</p>
                     <p>Get <i><a href={"#"}>laptops</a></i>, <i><a href={"#"}>hacker kits</a></i>, and more!</p>
 
                     <div className={"buttons"}>
-                        <div className={"button-container"}>
-                            Learn More <ArrowDown size={16} strokeWidth={2} />
-                        </div>
-                        <div className={"button-container-important"}>
-                            RSVP <ArrowUpRight size={16} strokeWidth={3}/>
-                        </div>
+                        <a href={"#ysws"}>
+                            <div className={"button-container"}>
+                                Learn More <ArrowDown size={16} strokeWidth={2}/>
+                            </div>
+                        </a>
+                        <a href={"#footer"}>
+                            <div className={"button-container-important"}>
+                                RSVP <ArrowUpRight size={16} strokeWidth={3}/>
+                            </div>
+                        </a>
                     </div>
 
                     <div className={"terminal"}>
@@ -42,12 +80,17 @@ function Landing() {
                             </div>
                         </div>
                         <div className={"body"}>
-                            <p>anon@hackclub ~ %</p>
+                            <p>anon@hackclub ~ % ./start --journey</p>
+                            <p>OBJECTIVE: <span className={"accent"}>BUILD. BREAK. SECURE.</span><br/>
+                                REWARD SYSTEM: <span className={"info"}>BYTES ENABLED</span><br/>
+                                STATUS: <span className={"success"}>READY</span>
+                                <span className={"cursor"}><b>_</b></span>
+                            </p>
                         </div>
                     </div>
                 </section>
             </section>
-            <section className="ysws">
+            <section id={"ysws"} className="ysws">
                 <div className={"divider"}>
                     <div className="track">
                         <span>{generateBinary()}</span>
@@ -110,7 +153,7 @@ function Landing() {
                 </div>
 
             </section>
-            <section className={"community"}>
+            <section id={"community"} className={"community"}>
                 <div className={"divider"}>
                     <div className="track">
                         <span>{generateBinary()}</span>
@@ -125,7 +168,8 @@ function Landing() {
                 <div className={"container"}>
                     <div className={"description"}>
                         <h2>Join the community</h2>
-                        <p>Connect with thousands of teen hackers on Slack, share your projects, and get help when you're stuck.</p>
+                        <p>Connect with thousands of teen hackers on Slack, share your projects, and get help when
+                            you're stuck.</p>
                         <div className={"buttons"}>
                             {/*<div className={"button-container"}>*/}
                             {/*    Learn More*/}
@@ -154,13 +198,17 @@ function Landing() {
                                 INIT handshake...<br/>
                                 RESOLVING: <span className="accent">hackclub.com/slack</span><br/>
                                 STATUS: <span className="success">FRIENDLY</span><br/>
-                                NODES: <span className="info">49,567</span><br/>
+                                NODES: <span className="info">
+                                <span className="info">
+                                    {number ? number.toLocaleString() : "..." }
+                                </span>
+                            </span><br/>
                             </p>
                         </div>
                     </div>
                 </div>
             </section>
-            <section className={"faqs"}>
+            <section id={"faqs"} className={"faqs"}>
                 <div className={"divider"}>
                     <div className="track">
                         <span>{generateBinary()}</span>
@@ -171,13 +219,15 @@ function Landing() {
 
                 <h1>FAQs</h1>
                 <div className={"small-divider"}/>
-                <p>Some of  your pressing questions about <i>CIPHER</i><br/>
+                <p>Some of your pressing questions about <i>CIPHER</i><br/>
                     has been answered below: </p>
 
                 <div className={"container"}>
                     <div className={"faq"}>
                         <div className={"question"}>Q. When will this start?</div>
-                        <div className={"answer"}><i>CIPHER</i> is a YSWS concept. If this gets selected for 2026 Summer Internship or if I get sponsors this will become a reality! Keep an eye on #cipher!</div>
+                        <div className={"answer"}><i>CIPHER</i> is a YSWS concept. If this gets selected for 2026 Summer
+                            Internship or if I get sponsors this will become a reality! Keep an eye on #cipher!
+                        </div>
                     </div>
                     <div className={"faq"}>
                         <div className={"question"}>Q. Can I submit multiple projects?</div>
@@ -186,20 +236,24 @@ function Landing() {
                     <div className={"faq"}>
                         <div className={"question"}>Q. What is <i>"BYTES"</i>?</div>
                         <div className={"answer"}>
-                            <i>BYTES</i> are the fake currency of Cipher. After submitting a project, it will go through voting. The result of the voting determines how many <i>BYTES</i> you'll receive for each hour coded.<br/><br/>
-                            Use the <i>BYTES</i> to buy something nice!</div>
+                            <i>BYTES</i> are the fake currency of Cipher. After submitting a project, it will go through
+                            voting. The result of the voting determines how many <i>BYTES</i> you'll receive for each
+                            hour coded.<br/><br/>
+                            Use the <i>BYTES</i> to buy something nice!
+                        </div>
                     </div>
                     <div className={"faq"}>
                         <div className={"question"}>Q. How do I track time?</div>
                         <div className={"answer"}>
                             Use Hackatime, an editor extension that tracks the time you spend coding. You can install it
-                            <a href={"https://hackatime.hackclub.com/"}  target="_blank" rel="noopener noreferrer"> here</a>
+                            <a href={"https://hackatime.hackclub.com/"} target="_blank"
+                               rel="noopener noreferrer"> here</a>
                             !
                         </div>
                     </div>
                 </div>
             </section>
-            <section className={"footer"}>
+            <section id={"footer"} className={"footer"}>
                 <div className={"divider"}>
                     <div className="track">
                         <span>{generateBinary()}</span>
@@ -210,7 +264,8 @@ function Landing() {
                 <div className={"container"}>
                     <div className={"rsvp"}>
                         <h1>Want it to happen?</h1>
-                        <p>CIPHER is nowhere near completion. So, if you want CIPHER to become a reality, RSVP now! and keep an eye on #cipher!</p>
+                        <p>CIPHER is nowhere near completion. So, if you want CIPHER to become a reality, RSVP now! and
+                            keep an eye on #cipher!</p>
                         <div className={"buttons"}>
                             <div className={"button-container"}>
                                 Join Slack
