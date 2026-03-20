@@ -229,7 +229,8 @@ function Landing() {
                     {[
                         {
                             q: "When will this start?",
-                            a: <> <i>CIPHER</i> is a YSWS concept. If this gets selected for 2026 Summer Internship or if I get sponsors this will become a reality! Keep an eye on #cipher! </>
+                            a: <> <i>CIPHER</i> is a YSWS concept. If this gets selected for 2026 Summer Internship or if I get sponsors this will become a reality! Keep an eye on <a href={"https://hackclub.enterprise.slack.com/archives/C0ALSDTTU12"} target="_blank"
+                                                                                                                                                                                       rel="noopener noreferrer"> #cipher</a>! </>
                         },
                         {
                             q: "Can I submit multiple projects?",
@@ -248,6 +249,14 @@ function Landing() {
                                 <a href={"https://hackatime.hackclub.com/"} target="_blank"
                                    rel="noopener noreferrer"> here</a>
                                 !</>
+                        },
+                        {
+                            q: "I have more questions!",
+                            a: <>If you have any more questions feel free to ask in
+                                <a href={"https://hackclub.enterprise.slack.com/archives/C0ALSDTTU12"} target="_blank"
+                                   rel="noopener noreferrer"> #cipher</a> or reach out to
+                                <a href={"https://hackclub.enterprise.slack.com/archives/D0A4UTZNARL"} target="_blank"
+                                   rel="noopener noreferrer"> me</a>!</>
                         }
                     ].map((item, i) => (
                         <div className="faq" key={i}>
@@ -277,7 +286,8 @@ function Landing() {
                     <div className={"rsvp"}>
                         <h1>Want it to happen?</h1>
                         <p>CIPHER is nowhere near completion. So, if you want CIPHER to become a reality, RSVP now! and
-                            keep an eye on #cipher!</p>
+                            keep an eye on <a href={"https://hackclub.enterprise.slack.com/archives/C0ALSDTTU12"} target="_blank"
+                                              rel="noopener noreferrer"> #cipher</a>!</p>
                         <div className={"buttons"}>
                             <a href={"https://hackclub.com/slack"} target={"_blank"} rel="noopener noreferrer" >
                                 <div className={"button-container"}>
