@@ -55,7 +55,7 @@ function Landing() {
                         )}
                     </h1>
                     <p>Build intentionally <span className={"success"}><i>INSECURE</i></span> apps, hack others'.</p>
-                    <p>Get <i><a href={"#"}>laptops</a></i>, <i><a href={"#"}>hacker kits</a></i>, and more!</p>
+                    <p>Get <i><a href={"#ysws"}>laptops</a></i>, <i><a href={"#ysws"}>hacker kits</a></i>, and more!</p>
 
                     <div className={"buttons"}>
                         <a href={"#ysws"}>

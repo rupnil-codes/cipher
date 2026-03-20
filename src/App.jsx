@@ -35,7 +35,7 @@ function App() {
             <div className={"dotted-bg"}></div>
             {/*<div id={"trailer"}></div>*/}
 
-            <Navbar />
+            {/*<Navbar />*/}
             <Landing />
 
             <Analytics />
