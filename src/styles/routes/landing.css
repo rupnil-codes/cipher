@@ -118,6 +118,7 @@
     /*height: 18rem;*/
 
     max-width: 55rem;
+    min-width: 27rem;
     width: 65%;
 
     border-radius: 1.25rem 1.25rem 0 0;
@@ -185,6 +186,7 @@
     width: 100%;
 
     color: var(--clr-surface-a80);
+    margin-left: 5rem;
 }
 
 .landing .hero .terminal .body {
@@ -716,6 +718,7 @@ a {
 
     /*margin-bottom: 12rem;*/
     /*background-color: var(--clr-dark-a0);*/
+    text-align: center
 }
 
 
@@ -761,6 +764,7 @@ a {
     letter-spacing: 2px;
 
     margin: 0;
+    text-align: center;
 }
 
 .footer p {
@@ -827,4 +831,83 @@ a {
 @keyframes blink {
     0%,50%,100% { opacity: 1; }
     25%,75% { opacity: 0; }
+}
+
+
+@media screen and (max-width: 930px) {
+    .ysws .cards {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 55rem;
+        height: 64rem;
+
+        /*background-color: var(--clr-surface-tonal-a50);*/
+    }
+    .arrow {
+        rotate: 50deg;
+    }
+
+    .community .container .description {
+        text-align: center;
+    }
+    .community .container .buttons {
+        justify-content: center;
+    }
+    .community .container {
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .landing .hero .terminal {
+        min-width: 5rem;
+        width: 90%;
+    }
+
+    .community .container {
+        width: 100%;
+    }
+
+    .community .container .terminal {
+        min-width: 5rem;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .ysws .cards {
+        width: 100%;
+        height: auto;
+
+        text-align: center;
+    }
+    .ysws .cards .card {
+        height: 90%;
+        width: 70%;
+    }
+    .ysws .cards .card.ys {
+        rotate: 0deg;
+    }
+    .ysws .cards .card.ws {
+        rotate: 0deg;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .actions {
+        opacity: 0;
+        visibility: hidden;
+        height: 0;
+        width: 0;
+    }
+
+    .landing .hero .terminal .titlebar .title-container {
+        margin-left: 0;
+    }
+
+    .community h1 {
+        font-size: 2.5rem;
+    }
 }
