@@ -128,12 +128,13 @@
 
     /*border: 2px solid color-mix(in srgb, var(--clr-primary-a30) 20%, transparent);*/
 
-    box-shadow: 0 0 4rem 1rem var(--clr-surface-a0);
+    box-shadow: 0 0 3rem 0.25rem var(--clr-surface-a0);
     transition: 0.3s all ease-in-out;
 }
 .landing .hero .terminal:hover {
     /*translate: 0 -1rem;*/
-    margin-top: 2.5rem;
+    margin-top: 3.75rem;
+    scale: 1.05;
 }
 
 .landing .hero .terminal .titlebar {
@@ -305,7 +306,7 @@
     justify-content: center;
 
     width: 55rem;
-    height: 30rem;
+    height: 32rem;
 
     /*background-color: var(--clr-surface-tonal-a50);*/
 }
@@ -568,6 +569,10 @@
     color: var(--clr-warning-a10);
     font-weight: bold;
 }
+.warn {
+    color: var(--soft-red);
+    font-weight: bold;
+}
 
 .community .container .buttons {
     margin-top: 0.75rem;
@@ -781,7 +786,7 @@ a {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 1rem;
+    gap: 0.5rem;
 
     padding: 0.75rem 1.5rem;
 

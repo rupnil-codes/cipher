@@ -54,7 +54,7 @@ function Landing() {
                                     : char
                         )}
                     </h1>
-                    <p>Build a <span className={"success"}>CYBERSECURITY</span> related project.</p>
+                    <p>Build intentionally <span className={"success"}><i>INSECURE</i></span> apps, hack others'.</p>
                     <p>Get <i><a href={"#"}>laptops</a></i>, <i><a href={"#"}>hacker kits</a></i>, and more!</p>
 
                     <div className={"buttons"}>
@@ -84,8 +84,8 @@ function Landing() {
                         <div className={"body"}>
                             <p>anon@hackclub ~ % ./start --journey</p>
                             <p>OBJECTIVE: <span className={"accent"}>BUILD. BREAK. SECURE.</span><br/>
-                                REWARD SYSTEM: <span className={"info"}>BYTES</span><br/>
-                                STATUS: <span className={"success"}>BUILDING</span>
+                                REWARDING: <span className={"info"}>BYTES</span><br/>
+                                STATUS: <span className={"success"}>BUILDING</span>...
                                 <span className={"cursor"}><b>_</b></span>
                             </p>
                         </div>
@@ -112,17 +112,17 @@ function Landing() {
                         <div className={"header"}>
                             <h1>You ship</h1>
                         </div>
-                        <p>You make any Cybersecurity related project, like website, app, games, etc! Some ideas
-                            include: </p>
+                        <p>You make a <span className={"warn"}>vulnerable</span> website, app, games, etc., <u>along with a patched version</u>. Others will try to break it. Like:
+                            </p>
                         <div className={"ideas"}>
                             <div className={"ideas-container"}>
-                                Encryption Algorithms
+                                Hackable Authentication
                             </div>
                             <div className={"ideas-container"}>
-                                A Hacker Sim Game
+                                SQL Injections
                             </div>
                             <div className={"ideas-container"}>
-                                A password manager
+                                Insecure Chat App
                             </div>
                             <div className={"ideas-container"}>
                                 Capture the Flags
@@ -136,7 +136,7 @@ function Landing() {
                         <div className={"header"}>
                             <h1>We ship</h1>
                         </div>
-                        <p>Submit projects earn <i>BYTES</i> & buy stuff from our shop! Items include: </p>
+                        <p>Submit projects, complete <span className={"accent"}>bounties</span>, earn <span className={"info"}><i>BYTES</i></span> & buy stuff from our shop! Items include: </p>
                         <div className={"ideas"}>
                             <div className={"ideas-container"}>
                                 Hackduckies
@@ -150,6 +150,7 @@ function Landing() {
                             <div className={"ideas-container"}>
                                 Laptops & More
                             </div>
+                            <p>* actual shop may differ</p>
                         </div>
                     </div>
                 </div>
