@@ -9,7 +9,7 @@
 
     background-image: radial-gradient(
             circle,
-            color-mix(in srgb, var(--clr-surface-a10) 60%, black) 1px,
+            color-mix(in srgb, var(--clr-surface-a10) 80%, black) 1px,
             transparent 1px
     );
 
