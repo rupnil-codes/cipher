@@ -237,8 +237,8 @@ function Landing() {
                         },
                         {
                             q: 'What is "BYTES"?',
-                            a: <> <i>BYTES</i> are the fake currency of Cipher. After submitting a project, it will go through
-                                voting. The result of the voting determines how many <i>BYTES</i> you'll receive for each
+                            a: <> <i>BYTES</i> are the fake currency of Cipher. After submitting a project,
+                                you will be assigned some "bounties" where you have to find others vulnerabilities. The result of the bounty hunt determines how many <i>BYTES</i> you'll receive for each
                                 hour coded.<br/><br/>
                                 Use the <i>BYTES</i> to buy something nice! </>
                         },
