@@ -84,8 +84,8 @@ function Landing() {
                         <div className={"body"}>
                             <p>anon@hackclub ~ % ./start --journey</p>
                             <p>OBJECTIVE: <span className={"accent"}>BUILD. BREAK. SECURE.</span><br/>
-                                REWARD SYSTEM: <span className={"info"}>BYTES ENABLED</span><br/>
-                                STATUS: <span className={"success"}>READY</span>
+                                REWARD SYSTEM: <span className={"info"}>BYTES</span><br/>
+                                STATUS: <span className={"success"}>BUILDING</span>
                                 <span className={"cursor"}><b>_</b></span>
                             </p>
                         </div>
